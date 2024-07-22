@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/templates/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="https://framerusercontent.com/images/8rL9KIsdr9K2LOC16URH5qpzpfY.png">
+    <title>Output</title>
+</head>
+
+<body>
+    <div class="container output_container">
+        <div class="box">
+            {{if eq .Btn "submit"}}<textarea name="output" id="outputID" rows="8"
+                readonly>&#10;{{.Output}}</textarea>{{end}}
+            {{if eq .Btn "test"}}<textarea name="output" id="outputID" rows="8"
+                readonly>&#10;{{range .Outputs}}{{.}}*************************************************&#10;{{end}}</textarea>{{end}}
+            <form action="/" method="GET">
+                <button type="submit" style="width: 229px;">Return To Home</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

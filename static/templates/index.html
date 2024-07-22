@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascii-Art-Web</title>
+    <link rel="stylesheet" href="/static/templates/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="https://framerusercontent.com/images/8rL9KIsdr9K2LOC16URH5qpzpfY.png">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <form class="index-form" action="/ascii-art" method="post">
+
+            <div class="text-form">
+                <textarea name="textName" id="textID" maxlength="1000">&#10;</textarea>
+                <div class="label-text">Enter Your Text</div>
+            </div>
+
+            <div class="radio-parent">
+                <div class="radio-box">
+                    <input type="radio" name="banner" id="standard" value="standard">
+                    <label for="standard">standard</label>
+                </div>
+
+                <div class="radio-box">
+                    <input type="radio" name="banner" id="thinkertoy" value="thinkertoy">
+                    <label for="thinkertoy">thinkertoy</label>
+                </div>
+
+                <div class="radio-box">
+                    <input type="radio" name="banner" id="shadow" value="shadow">
+                    <label for="shadow">shadow</label>
+                </div>
+            </div>
+
+
+            <button type="submit" name="ButtonName" value="submit">submit</button>
+            <button type="submit" name="ButtonName" value="test" style="margin-top: 50px;">test</button>
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>
